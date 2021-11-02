@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html debug="ture" lang="zh_tw">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Patty Hsu">
+  <meta name="copyright" content="">
+  <title>Kollos</title>
+  <meta property="og:title" content="" />
+  <meta property="og:name" content="" />
+  <meta property="og:type" content="" >
+  <meta property="og:image" content="" />
+  <meta property="og:url" content=""/>
+  <meta property="og:description" content="" />
+  <link rel="canonical" href=""/>
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript">var console = { log: function() {} };</script>
+  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="css/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+  <link href="css/bootnavbar.css" rel="stylesheet" type="text/css"/>
+  <link href="css/common.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootnavbar.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/tinynav.min.js"></script>
+  <script src="js/init.js"></script>
+  <!-- Include Bootstrap Datepicker -->
+  <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
+  <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+
+  <script>
+  $(function () {
+    $('.product_sidebar_list').tinyNav({
+      header: 'MENU 選單項目' // Writing any title with this option triggers the header
+    });
+    $('#main_navbar').bootnavbar();
+  });
+  </script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+       <div class="header_marquee">官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠<span><img src="images/icons/close.png" alt=""></span></div>
+       <!--NAV-->
+       <nav>
+          <div class="search">
+             <form class="search_form" action="">
+                <div class="vessel">
+                   <label>搜尋</label>
+                   <input type="text" name="" placeholder="搜尋">
+                   <input type="submit" value="">
+                </div>
+             </form>
+          </div>
+          <div class="nav">
+             <ul class="menu">
+                <div id="logo">
+                   <a href="index.html">
+                      <h1>Kollos</h1>
+                   </a>
+                </div>
+                <li class="list">
+                   <a href="news.html">
+                      <h2>最新消息</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="product.html">
+                      <h2>商品介紹</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="product.html">
+                      <h2>商品介紹</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="blog.html">
+                      <h2>文章介紹</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="blog.html">
+                      <h2>文章介紹</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="javascript:;">
+                      <h2>關於KOLLOS</h2>
+                   </a>
+                </li>
+                <li class="list">
+                   <a href="buy.html">
+                      <h2>馬上購買</h2>
+                   </a>
+                </li>
+             </ul>
+             <ul class="shortcut">
+                <li class="list"><a href="javascript:;" data-toggle="modal" data-target="#signin"><img src="images/icons/person.png" alt=""></a></li>
+                <li class="list"><a href="javascript:;"><img src="images/icons/logout.png" alt=""></a></li>
+                <li class="list"><a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icons/cart.png" alt=""></a></li>
+                <li class="list"><a href="store.html"><img src="images/icons/location.png" alt=""></a></li>
+             </ul>
+          </div>
+       </nav>
+       <!--END NAV-->
+    </header>
+
+    <!-- Modal search -->
+    <div class="modal fade" id="search_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog modal-dialog-search" role="document">
+          <!--       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/XX.png" alt=""></span></button> -->
+          <div class="modal-content">
+             <div class="modal-body">
+                <form class="search_form" action="">
+                   <div class="vessel">
+                      <label>找商品</label>
+                      <input type="text" name="" placeholder="找商品">
+                      <input type="submit" value="">
+                   </div>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Modal menu -->
+    <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="addToCart">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><b>分類</b></div>
+             </div>
+             <div class="modal-body" style="overflow-y: auto;">
+                <div class="product_sidebar_menu">
+                   <ul class="product_sidebar_list">
+                      <li>
+                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">火鍋料底</a>
+                         <ul class="collapse" id="homeSubmenu">
+                            <li><a href="product.html">火鍋料</a></li>
+                            <li><a href="product.html">魚類</a></li>
+                            <li><a href="product.html">豬類</a></li>
+                         </ul>
+                      </li>
+                      <li>
+                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">湯底</a>
+                         <ul class="collapse" id="pageSubmenu">
+                            <li><a href="product.html">火鍋料</a></li>
+                            <li><a href="product.html">魚類</a></li>
+                            <li><a href="product.html">豬類</a></li>
+                         </ul>
+                      </li>
+                   </ul>
+                </div>
+             </div>
+          </div>
+          <!-- modal-content -->
+       </div>
+       <!-- modal-dialog -->
+    </div>
+
+    <!-- Modal 登入 -->
+    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-dialog modal-dialog-menber" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/XX.png" alt=""></span></button>
+          <div class="modal-content">
+             <div class="modal-body">
+
+                   <div class="menber">
+
+
+                            <ul class="menber_list">
+                               <li class="menber_btn">
+                                  <div class="col-lg-6 col-md-8 col-12 bootstrap_default menber_btn_left">
+                                     <a href="menber.html"><img src="images/line.jpg" alt=""></a>
+                                  </div>
+                                  <div class="col-lg-6 col-md-8 col-12 bootstrap_default menber_btn_left">
+                                     <a href="menber.html"><img src="images/fb.jpg" alt=""></a>
+                                  </div>
+                               </li>
+                               <li>
+                                  <div><input type="text" name="" placeholder="用戶名"></div>
+                               </li>
+                               <!--                            <li>
+                                  <div class="select">
+                                     <select id="standard-select">
+                                        <option value="Option 1">使用E-mail登入</option>
+                                        <option value="Option 2">使用手機登入</option>
+                                     </select>
+                                  </div>
+                                  </li> -->
+                               <li>
+                                  <div><input type="text" name="" placeholder="E-mail"></div>
+                               </li>
+                               <li>
+                                  <div><input type="text" name="" placeholder="手機號碼"></div>
+                               </li>
+                               <li>
+                                  <div><input type="text" name="" placeholder="密碼"></div>
+                               </li>
+                               <li>
+                                  <div class="cal">
+                                     <input type="text" name="" placeholder="生日日期" id="birthday2_datepicker">
+                                     <span><a href="javascript::"><img src="images/icons/cal.png" alt=""></a></span>
+                                  </div>
+                               </li>
+                               <li>
+                                  <p class="purchase_checkbox"><span><label><input type="checkbox" />我同意網站<a href="privacy.html" target="_blank">服務條款及隱私政策</a></label></span></p>
+                               </li>
+                               <li class="btn_red">
+                                  <a href="menber.html">立即加入</a>
+                               </li>
+                            </ul>
+
+                      </div>
+
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Modal 購物車 -->
+    <div class="modal right fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart">
+       <div class="modal-dialog" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>購物車</b></div>
+             </div>
+             <div class="modal-body" style="overflow-y:auto;">
+                <div class="product" id="cart">
+                      <ul class="row cart_content">
+                         <li class="col-lg-3 col-md-12 col-12 bootstrap_default img"><img src="images/product_003.jpg" alt=""></li>
+                         <li class="col-lg-9 col-md-12 col-12 bootstrap_default">
+                            <ul>
+                               <li class="cart_content_tile02">洸動能女人知性氣質舒活組(女短袖+女訓練褲)買就送550元能量貼布</li>
+                               <li class="cart_content_tile">洸動能短版立領機能長袖舒活衣 ( 買就送550元能量貼布 )<span>顏色: 靜謐黑 / 尺寸: XS</span></li>
+                               <li class="cart_content_spec">
+                                  <div class="product_price">
+                                     <div class="product_price_discount m-0"><span class="red">NT$ 999,999</span></div>
+                                  </div>
+                               </li>
+                               <li class="cart_content_spec">
+                                  <div class="product_numbers">
+                                     <div class="inc button">－</div>
+                                     <input type="text" name="french-hens" id="french-hens" value="3">
+                                     <div class="dec button">＋</div>
+                                  </div>
+                               </li>
+                               <li class="cart_content_delete">
+                                  <a href="javascript:;"><img src="images/icons/delete02.png" alt=""><span class="red">刪除</span></a>
+                               </li>
+                            </ul>
+                         </li>
+                      </ul>
+                      <ul class="row cart_content">
+                         <li class="col-lg-3 col-md-12 col-12 bootstrap_default img"><img src="images/product_003.jpg" alt=""></li>
+                         <li class="col-lg-9 col-md-12 col-12 bootstrap_default">
+                            <ul>
+                               <li class="cart_content_tile02">洸動能女人知性氣質舒活組(女短袖+女訓練褲)買就送550元能量貼布</li>
+                               <li class="cart_content_tile">洸動能短版立領機能長袖舒活衣 ( 買就送550元能量貼布 )<span>顏色: 靜謐黑 / 尺寸: XS</span></li>
+                               <li class="cart_content_spec">
+                                  <div class="product_price">
+                                     <div class="product_price_discount m-0"><span class="red">NT$ 999,999</span></div>
+                                  </div>
+                               </li>
+                               <li class="cart_content_spec">
+                                  <div class="product_numbers">
+                                     <div class="inc button">－</div>
+                                     <input type="text" name="french-hens" id="french-hens" value="3">
+                                     <div class="dec button">＋</div>
+                                  </div>
+                               </li>
+                               <li class="cart_content_delete">
+                                  <a href="javascript:;"><img src="images/icons/delete02.png" alt=""><span class="red">刪除</span></a>
+                               </li>
+                            </ul>
+                         </li>
+                      </ul>
+                </div>
+             </div>
+             <div class="modal-footer">
+                <div class="price">
+                   <p><span>總金額  NT$</span>1,024元</p>
+                </div>
+                <div class="btn btn_primary">
+                   <a href="cart01.html">前往結帳</a>
+                </div>
+             </div>
+          </div>
+          <!-- modal-content -->
+       </div>
+       <!-- modal-dialog -->
+    </div>
+    <!--END HEADER-->
+    <div id="wrapper">
+      <!-- MENBER -->
+      <section id="menber">
+        <div class="row content">
+          <div class="col-lg-2 col-md-12 col-12 bootstrap_default menber_sidebar">
+            <ul>
+              <li class="menber_sidebar_list"><a href="menber.html">會員資料設定</a></li>
+              <li class="menber_sidebar_list"><a href="order_histoty.html">訂單查詢</a></li>
+              <li class="menber_sidebar_list"><a href="money_histoty.html" class="on">購物金紀錄</a></li>
+              <li class="menber_sidebar_list"><a href="coupon_histoty.html">折價券紀錄</a></li>
+              <li class="menber_sidebar_list"><a href="password.html">更改密碼</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-10 col-md-12 col-12 bootstrap_default">
+            <!-- 購物金紀錄 -->
+            <ul>
+              <li class="content_title03">購物金紀錄</li>
+              <li>
+                <ul class="block_list_table title">
+                  <li data-title="訂單編號:">訂單編號</li>
+                  <li data-title="已生效:">已生效</li>
+                  <li data-title="已抵用:">已抵用</li>
+                  <li data-title="剩餘點數:">剩餘點數</li>
+                  <li data-title="說明:">說明</li>
+                </ul>
+                <ul class="block_list_table">
+                  <li data-title="訂單編號:">202110100008</li>
+                  <li data-title="已生效:">999,999,999</li>
+                  <li data-title="已抵用:">999,999,999</li>
+                  <li data-title="剩餘點數:">999,999,999</li>
+                  <li data-title="說明:">說明說明說明說明說明說明說明說明說明說明說明說</li>
+                </ul>
+                <ul class="block_list_table">
+                  <li data-title="訂單編號:">202110100008</li>
+                  <li data-title="已生效:">999,999,999</li>
+                  <li data-title="已抵用:">999,999,999</li>
+                  <li data-title="剩餘點數:">999,999,999</li>
+                  <li data-title="說明:">說明說明說明說明說明說明說明說明說明說明說明說說明說明說明說明說明說明說明說明說明說明說明說說明說明說明說明說明說明說明說明說明說明說明說說明說明說明說明說明說明說明說明說明說明說明說</li>
+                </ul>
+              </li>
+              <!-- END 購物金紀錄 -->
+              <!--pagenum-->
+              <div >
+                <ul class="pagenum">
+                  <li class="btnleft">
+                    <a href="javascript:;"></i></a>
+                  </li>
+                  <li class="center">
+                    <a class="on" title="第1頁">1</a>
+                    <a href="#" title="第2頁">2</a>
+                    <a href="#" title="第3頁">3</a>
+                    <a href="#" title="第4頁">4</a>
+                    <a href="#" title="第5頁">5</a>
+                  </li>
+                  <li class="btnright">
+                    <a href="javascript:;"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!--END pagenum-->
+            </ul>
+            <!-- END 會員資料 -->
+          </div>
+        </div>
+      </section>
+      <!--END MENBER-->
+    </div>
+    <!--END WRAPPER-->
+    <!-- FOOTER -->
+    <footer>
+       <div id="footer">
+          <ul class="row content">
+             <li class="col-lg-4 col-md-12 col-12 bootstrap_default footer_title">
+                <ul>
+                   <li><span class="decs">LOVE HEALTHY, FIGHT FOR YOURSELF.<br/>科樂思 / 愛健康，為己而戰</span></li>
+                   <li class="footer_title_share">
+                      <a href="javascript:;"><img src="images/icons/fb.png" alt=""></a>
+                      <a href="javascript:;"><img src="images/icons/ig.png" alt=""></a>
+                      <a href="javascript:;"><img src="images/icons/youtube.png" alt=""></a>
+                      <a href="javascript:;"><img src="images/icons/line.png" alt=""></a>
+                   </li>
+                   <li><a href="javascript::">FB分享</a>
+                      <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                      <a href="javascript::">LINE分享</a>
+                      <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                      <a href="javascript::">複製網站連結</a>
+                   </li>
+                </ul>
+             </li>
+             <li class="col-lg-5 col-md-12 col-12 bootstrap_default footer_nav">
+                <ul class="row">
+                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                      <span>KOLLOS健康圈</span>
+                      <a href="blog.html">文章介紹</a>
+                      <a href="blog.html">文章介紹</a>
+                      <a href="blog.html">文章介紹</a>
+                   </li>
+                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                      <span>會員權益</span>
+                      <a href="register.html">加入會員</a>
+                      <a href="info.html">會員條款</a>
+                      <a href="info.html">會員權益</a>
+                   </li>
+                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                      <span>選購須知</span>
+                      <a href="info.html">訂購＆付款</a>
+                      <a href="info.html">運送方式</a>
+                      <a href="info.html">退換貨說明</a>
+                   </li>
+                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                      <span>客戶服務</span>
+                      <a href="order_histoty.html">訂單查詢</a>
+                      <a href="info.html">常見問題</a>
+                      <a href="store.html">授權通路</a>
+                   </li>
+                </ul>
+             </li>
+             <li class="col-lg-3 col-md-12 col-12 bootstrap_default footer_info">
+                <ul>
+                   <li>客服時間: 周一至周五9:30-12:00、13:30-17:00(周末及假日休息) </li>
+                   <li>客服電話: 06-2517573</li>
+                   <li>訂購專線: 06-7035521</li>
+                   <li>客服信箱: service@kollos.com.tw</li>
+                </ul>
+             </li>
+          </ul>
+          <div class="copyright">
+             Copyright © KOLLOS All Rights Reserved.
+             <ul class="copyright_link">
+                <li><a href="privacy.html">隱私權政策</a></li>
+                <li><a href="terms.html">網站使用條款</a></li>
+                <li><a href="sitemap.html">網站地圖</a></li>
+             </ul>
+          </div>
+       </div>
+    </footer>
+
+    <!-- <div id="btn_top">
+      <div id="btn_top02"><img src="images/icon_003.png"></div>
+      <a href="contact.html"><img src="images/icon_002.png"></a>
+      <a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icon_001.png"></a>
+    </div> -->
+    <!--END FOOTER-->
+  </body>
+</html>
