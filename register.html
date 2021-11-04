@@ -1,172 +1,234 @@
 <!DOCTYPE html>
 <html debug="ture" lang="zh_tw">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="Patty Hsu">
-  <meta name="copyright" content="">
-  <title>Kollos</title>
-  <meta property="og:title" content="" />
-  <meta property="og:name" content="" />
-  <meta property="og:type" content="" >
-  <meta property="og:image" content="" />
-  <meta property="og:url" content=""/>
-  <meta property="og:description" content="" />
-  <link rel="canonical" href=""/>
-  <!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <script type="text/javascript">var console = { log: function() {} };</script>
-  <![endif]-->
-  <meta http-equiv="X-UA-Compatible" content="IE=10" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
-  <link href="css/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
-  <link href="css/bootnavbar.css" rel="stylesheet" type="text/css"/>
-  <link href="css/common.css" rel="stylesheet" type="text/css" />
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/bootnavbar.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script type="text/javascript" src="js/tinynav.min.js"></script>
-  <script src="js/init.js"></script>
-  <!-- Include Bootstrap Datepicker -->
-  <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
-  <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
-  <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
-
-  <script>
-  $(function () {
-    $('.product_sidebar_list').tinyNav({
-      header: 'MENU 選單項目' // Writing any title with this option triggers the header
-    });
-    $('#main_navbar').bootnavbar();
-  });
-  </script>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header>
-       <div class="header_marquee">官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠<span><img src="images/icons/close.png" alt=""></span></div>
-       <!--NAV-->
-       <nav>
-          <div class="search">
-             <form class="search_form" action="">
-                <div class="vessel">
-                   <label>搜尋</label>
-                   <input type="text" name="" placeholder="搜尋">
-                   <input type="submit" value="">
-                </div>
-             </form>
-          </div>
-          <div class="nav">
-             <ul class="menu">
-                <div id="logo">
-                   <a href="index.html">
-                      <h1>Kollos</h1>
-                   </a>
-                </div>
-                <li class="list">
-                   <a href="news.html">
-                      <h2>最新消息</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="product.html">
-                      <h2>商品介紹</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="product.html">
-                      <h2>商品介紹</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="blog.html">
-                      <h2>文章介紹</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="blog.html">
-                      <h2>文章介紹</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="javascript:;">
-                      <h2>關於KOLLOS</h2>
-                   </a>
-                </li>
-                <li class="list">
-                   <a href="buy.html">
-                      <h2>馬上購買</h2>
-                   </a>
-                </li>
-             </ul>
-             <ul class="shortcut">
-                <li class="list"><a href="javascript:;" data-toggle="modal" data-target="#signin"><img src="images/icons/person.png" alt=""></a></li>
-                <li class="list"><a href="javascript:;"><img src="images/icons/logout.png" alt=""></a></li>
-                <li class="list"><a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icons/cart.png" alt=""></a></li>
-                <li class="list"><a href="store.html"><img src="images/icons/location.png" alt=""></a></li>
-             </ul>
-          </div>
-       </nav>
-       <!--END NAV-->
-    </header>
-
-    <!-- Modal search -->
-    <div class="modal fade" id="search_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-       <div class="modal-dialog modal-dialog-search" role="document">
-          <!--       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/XX.png" alt=""></span></button> -->
-          <div class="modal-content">
-             <div class="modal-body">
-                <form class="search_form" action="">
-                   <div class="vessel">
-                      <label>找商品</label>
-                      <input type="text" name="" placeholder="找商品">
-                      <input type="submit" value="">
-                   </div>
-                </form>
-             </div>
-          </div>
-       </div>
-    </div>
-
-    <!-- Modal menu -->
-    <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="addToCart">
-       <div class="modal-dialog" role="document">
-          <div class="modal-content">
-             <div class="modal-header">
-                <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><b>分類</b></div>
-             </div>
-             <div class="modal-body" style="overflow-y: auto;">
-                <div class="product_sidebar_menu">
-                   <ul class="product_sidebar_list">
-                      <li>
-                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">火鍋料底</a>
-                         <ul class="collapse" id="homeSubmenu">
-                            <li><a href="product.html">火鍋料</a></li>
-                            <li><a href="product.html">魚類</a></li>
-                            <li><a href="product.html">豬類</a></li>
-                         </ul>
-                      </li>
-                      <li>
-                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">湯底</a>
-                         <ul class="collapse" id="pageSubmenu">
-                            <li><a href="product.html">火鍋料</a></li>
-                            <li><a href="product.html">魚類</a></li>
-                            <li><a href="product.html">豬類</a></li>
-                         </ul>
-                      </li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-          <!-- modal-content -->
-       </div>
-       <!-- modal-dialog -->
-    </div>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="Patty Hsu">
+      <meta name="copyright" content="">
+      <title>Kollos</title>
+      <meta property="og:title" content="" />
+      <meta property="og:name" content="" />
+      <meta property="og:type" content="" >
+      <meta property="og:image" content="" />
+      <meta property="og:url" content=""/>
+      <meta property="og:description" content="" />
+      <link rel="canonical" href=""/>
+      <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script type="text/javascript">var console = { log: function() {} };</script>
+      <![endif]-->
+      <meta http-equiv="X-UA-Compatible" content="IE=10" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
+      <link href="css/bootstrap/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+      <link href="css/bootnavbar.css" rel="stylesheet" type="text/css"/>
+      <link href="css/common.css" rel="stylesheet" type="text/css" />
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootnavbar.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script type="text/javascript" src="js/tinynav.min.js"></script>
+      <script src="js/init.js"></script>
+      <!-- Include Bootstrap Datepicker -->
+      <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
+      <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
+      <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header>
+         <div class="header_marquee">
+            <div>官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠<span><img src="images/icons/close.png" alt=""></span></div></div>
+         <!--NAV-->
+         <nav>
+            <div class="search d-none d-xl-block">
+               <form class="search_form" action="">
+                  <div class="vessel">
+                     <label>搜尋</label>
+                     <input type="text" name="" placeholder="搜尋">
+                     <input type="submit" value="">
+                  </div>
+               </form>
+            </div>
+            <div class="nav">
+               <ul class="menu">
+                  <div id="logo">
+                     <a href="index.html">
+                        <h1>Kollos</h1>
+                     </a>
+                  </div>
+                  <li class="list d-none d-xl-block">
+                     <a href="news.html">
+                        <h2>最新消息</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="product.html">
+                        <h2>商品介紹</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="product.html">
+                        <h2>商品介紹</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="blog.html">
+                        <h2>文章介紹</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="blog.html">
+                        <h2>文章介紹</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="javascript:;">
+                        <h2>關於KOLLOS</h2>
+                     </a>
+                  </li>
+                  <li class="list d-none d-xl-block">
+                     <a href="buy.html">
+                        <h2>馬上購買</h2>
+                     </a>
+                  </li>
+               </ul>
+               <ul class="shortcut">
+                  <li class="list"><a href="javascript:;" data-toggle="modal" data-target="#signin"><img src="images/icons/person.png" alt=""></a></li>
+                  <li class="list"><a href="javascript:;"><img src="images/icons/logout.png" alt=""></a></li>
+                  <li class="list"><a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icons/cart.png" alt=""></a></li>
+                  <li class="list"><a href="store.html"><img src="images/icons/location.png" alt=""></a></li>
+                  <li class="list d-xl-none"><a href="#" class="dropbtn" data-toggle="modal" data-target="#searchM"><img src="images/icons/search02.png" alt=""></a></li>
+                  <li class="list d-xl-none"><a href="#" class="dropbtn" data-toggle="modal" data-target="#menu"><img src="images/icons/menu.png" alt=""></a></li>
+               </ul>
+            </div>
+         </nav>
+         <!--END NAV-->
+      </header>
+      <!-- MODAL 登入 -->
+      <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+               </div>
+               <div class="modal-body text-center">
+                  <ul class="modal-signin_block">
+                     <li class="modal-body_logo"><img src="images/logo.svg"></li>
+                     <li class="modal-body_title">如欲使用K樂使專屬福利或功能，請先登入</li>
+                     <div class="row modal-body_decs m-0 mt-3">
+                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_fb.png" alt=""></li>
+                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_google.png" alt=""></li>
+                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_line.png" alt=""></li>
+                     </div>
+                  </ul>
+                  <ul class="modal-signin_block">
+                     <li class="modal-body_title">或直接登入科樂思K樂使會員</li>
+                     <li class="block_list_content text-left"><input type="text" name="" placeholder="請輸入會員電子信箱或手機號碼"><span class="red">錯誤訊息</span></li>
+                     <li class="block_list_content text-left"><input type="text" name="" placeholder="請輸入會員登入密碼"><span class="red">錯誤訊息</span></li>
+                     <li class="block_list_content text-left"><input type="text" name="" placeholder="請輸入電子信箱"><span class="red">錯誤訊息</span></li>
+                     <li class="block_list text-left">
+                        <div class="block_list_address">
+                           <ul class="block_list_address_detail">
+                              <li class="input">
+                                 <input type="text" name="" placeholder="請輸入驗證碼">
+                              </li>
+                              <li><img src="images/code.jpg"></li>
+                              <li><a href="javascript:;"><img src="images/refresh.png" alt=""></a></li>
+                           </ul>
+                           <div class="red">錯誤訊息</div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul class="modal-signin_block">
+                     <div>登入即同意KOLLOS的<a href="privacy.html" target="_blank" class="red">隱私權政策</a>與<a href="terms.html" target="_blank" class="red">客戶服務條款</a></label></div>
+                     <div class="btn btn_secondary m-0 mt-3"><a href="menber.html">註冊會員</a></div>
+                     <div class="modal-body_link mt-3">
+                        <span><a href="register.html"><img src="images/icons/person.png" alt="">加入會員</a></span>
+                        <span><a href="forgot.html"><img src="images/icons/qusetion.png" alt="">忘記密碼</a></span>
+                        <span><a href="javascript:;"><img src="images/icons/phone.png" alt="">重寄認證碼</a></span>
+                     </div>
+                  </ul>
+                  <ul class="modal-signin_block" style="border-top:1px #E7E7E7 solid;">
+                     <div class="modal-body_title02">科樂思會員福利</div>
+                     <div class="row modal-body_decs">
+                        <li class="col-lg-6 col-md-12 col-12 bootstrap_default"><span>●</span>優先參與特殊好品預購</li>
+                        <li class="col-lg-6 col-md-12 col-12 bootstrap_default"><span>●</span>享有會員獨享專屬優惠</li>
+                        <li class="col-lg-6 col-md-12 col-12 bootstrap_default"><span>●</span>第一時間健康新品通知</li>
+                        <li class="col-lg-6 col-md-12 col-12 bootstrap_default"><span>●</span>享有會員獨特互動活動</li>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- MODAL DIALOG -->>
+      </div>
+      <!-- END MODAL 登入 -->
+      <!-- MODAL SEARCH -->
+      <div class="modal fade" id="searchM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+               </div>
+               <div class="modal-body">
+                  <form class="search_form" action="">
+                     <div class="vessel">
+                        <label>搜尋</label>
+                        <input type="text" name="" placeholder="搜尋">
+                        <input type="submit" value="">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- MODAL DIALOG -->
+      </div>
+      <!-- END MODAL SEARCH -->
+      <!-- MODAL MENU -->
+      <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>選單</b></div>
+               </div>
+               <div class="modal-body">
+                  <ul class="category">
+                     <li class="title">最新消息</li>
+                     <li><a href="news.html">KOLLOS新鮮事</a></li>
+                     <li><a href="news.html">遠紅外線Dr.K</a></li>
+                     <li><a href="news.html">專題報導</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">舒活健康衣褲</li>
+                     <li><a href="product.html">全系列商品</a></li>
+                     <li><a href="product.html">KOLLOS洸動能男款</a></li>
+                     <li><a href="product.html">KOLLOS洸動能女款</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">保健護理</li>
+                     <li><a href="product.html">全系列商品</a></li>
+                     <li><a href="product.html">奈米洸動能倍舒眠眼罩</a></li>
+                     <li><a href="product.html">奈米洸動能能量貼布</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">關於KOLLOS</li>
+                     <li><a href="javascript:;">公司緣起</a></li>
+                     <li><a href="javascript:;">科樂思的故事</a></li>
+                     <li><a href="javascript:;">核心科技</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title"><a href="buy.html">我要購買</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- MODAL DIALOG -->
+      </div>
+      <!-- END MODAL MENU -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog modal-dialog-menber" role="document">
@@ -207,11 +269,11 @@
                </div>
             </div>
          </div>
-         <!-- MODAL-CONRENT -->
+         <!-- MODAL DIALOG -->
       </div>
       <!-- END 購物車(DIALOG) -->
       <!-- MODAL 購物車(RIGHT) -->
-      <div class="modal right fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart">
+      <div class="modal right fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -278,11 +340,11 @@
                   </div>
                </div>
             </div>
-            <!-- MODAL-CONRENT -->
+            <!-- MODAL DIALOG -->
          </div>
          <!-- END MODAL 購物車(RIGHT) -->
       </div>
-    <!--END HEADER-->
+      <!--END HEADER-->
     <div id="wrapper">
       <!-- MENBER -->
       <section id="menber">
@@ -378,7 +440,7 @@
             </ul>
             <div class="mt-3"><label><input type="checkbox" name="" value="">我同意kollos客戶<a href="privacy.html" target="_blank" class="red">隱私權政策</a>與<a href="terms.html" target="_blank" class="red">客戶服務條款</a></label></div>
             <div class="row btn_product mt-5">
-              <span class="col-lg-4 col-md-6 col-6 bootstrap_default btn btn_primary m-auto"><a href="menber.html">註冊會員</a></span>
+              <span class="col-lg-4 col-md-6 col-12 bootstrap_default btn btn_primary m-auto"><a href="menber.html">註冊會員</a></span>
             </div>
             <!-- END 加入會員 -->
           </div>
@@ -387,80 +449,77 @@
       <!--END MENBER-->
     </div>
     <!--END WRAPPER-->
-    <!-- FOOTER -->
-    <footer>
-       <div id="footer">
-          <ul class="row content">
-             <li class="col-lg-4 col-md-12 col-12 bootstrap_default footer_title">
-                <ul>
-                   <li><span class="decs">LOVE HEALTHY, FIGHT FOR YOURSELF.<br/>科樂思 / 愛健康，為己而戰</span></li>
-                   <li class="footer_title_share">
-                      <a href="javascript:;"><img src="images/icons/fb.png" alt=""></a>
-                      <a href="javascript:;"><img src="images/icons/ig.png" alt=""></a>
-                      <a href="javascript:;"><img src="images/icons/youtube.png" alt=""></a>
-                      <a href="javascript:;"><img src="images/icons/line.png" alt=""></a>
-                   </li>
-                   <li><a href="javascript::">FB分享</a>
-                      <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-                      <a href="javascript::">LINE分享</a>
-                      <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-                      <a href="javascript::">複製網站連結</a>
-                   </li>
-                </ul>
-             </li>
-             <li class="col-lg-5 col-md-12 col-12 bootstrap_default footer_nav">
-                <ul class="row">
-                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
-                      <span>KOLLOS健康圈</span>
-                      <a href="blog.html">文章介紹</a>
-                      <a href="blog.html">文章介紹</a>
-                      <a href="blog.html">文章介紹</a>
-                   </li>
-                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
-                      <span>會員權益</span>
-                      <a href="register.html">加入會員</a>
-                      <a href="info.html">會員條款</a>
-                      <a href="info.html">會員權益</a>
-                   </li>
-                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
-                      <span>選購須知</span>
-                      <a href="info.html">訂購＆付款</a>
-                      <a href="info.html">運送方式</a>
-                      <a href="info.html">退換貨說明</a>
-                   </li>
-                   <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
-                      <span>客戶服務</span>
-                      <a href="order_histoty.html">訂單查詢</a>
-                      <a href="info.html">常見問題</a>
-                      <a href="store.html">授權通路</a>
-                   </li>
-                </ul>
-             </li>
-             <li class="col-lg-3 col-md-12 col-12 bootstrap_default footer_info">
-                <ul>
-                   <li>客服時間: 周一至周五9:30-12:00、13:30-17:00(周末及假日休息) </li>
-                   <li>客服電話: 06-2517573</li>
-                   <li>訂購專線: 06-7035521</li>
-                   <li>客服信箱: service@kollos.com.tw</li>
-                </ul>
-             </li>
-          </ul>
-          <div class="copyright">
-             Copyright © KOLLOS All Rights Reserved.
-             <ul class="copyright_link">
-                <li><a href="privacy.html">隱私權政策</a></li>
-                <li><a href="terms.html">網站使用條款</a></li>
-                <li><a href="sitemap.html">網站地圖</a></li>
-             </ul>
-          </div>
-       </div>
-    </footer>
-
-    <!-- <div id="btn_top">
-      <div id="btn_top02"><img src="images/icon_003.png"></div>
-      <a href="contact.html"><img src="images/icon_002.png"></a>
-      <a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icon_001.png"></a>
-    </div> -->
-    <!--END FOOTER-->
+      <!-- FOOTER -->
+      <footer>
+         <div id="footer">
+            <ul class="row content">
+               <li class="col-lg-4 col-md-12 col-12 bootstrap_default footer_title">
+                  <ul>
+                     <li><span class="decs">LOVE HEALTHY, FIGHT FOR YOURSELF.<br/>科樂思 / 愛健康，為己而戰</span></li>
+                     <li class="footer_title_share">
+                        <a href="javascript:;"><img src="images/icons/fb.png" alt=""></a>
+                        <a href="javascript:;"><img src="images/icons/ig.png" alt=""></a>
+                        <a href="javascript:;"><img src="images/icons/youtube.png" alt=""></a>
+                        <a href="javascript:;"><img src="images/icons/line.png" alt=""></a>
+                     </li>
+                     <li><a href="javascript::">FB分享</a>
+                        <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                        <a href="javascript::">LINE分享</a>
+                        <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                        <a href="javascript::">複製網站連結</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="col-lg-5 col-md-12 col-12 bootstrap_default footer_nav">
+                  <ul class="row">
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
+                        <span>KOLLOS健康圈</span>
+                        <a href="blog.html">文章介紹</a>
+                        <a href="blog.html">文章介紹</a>
+                        <a href="blog.html">文章介紹</a>
+                     </li>
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
+                        <span>會員權益</span>
+                        <a href="register.html">加入會員</a>
+                        <a href="info.html">會員條款</a>
+                        <a href="info.html">會員權益</a>
+                     </li>
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
+                        <span>選購須知</span>
+                        <a href="info.html">訂購＆付款</a>
+                        <a href="info.html">運送方式</a>
+                        <a href="info.html">退換貨說明</a>
+                     </li>
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
+                        <span>客戶服務</span>
+                        <a href="order_histoty.html">訂單查詢</a>
+                        <a href="info.html">常見問題</a>
+                        <a href="store.html">授權通路</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="col-lg-3 col-md-12 col-12 bootstrap_default footer_info">
+                  <ul>
+                     <li>客服時間: 周一至周五9:30-12:00、13:30-17:00(周末及假日休息) </li>
+                     <li>客服電話: 06-2517573</li>
+                     <li>訂購專線: 06-7035521</li>
+                     <li>客服信箱: service@kollos.com.tw</li>
+                  </ul>
+               </li>
+            </ul>
+            <div class="copyright">
+               <div>
+                  Copyright © KOLLOS All Rights Reserved.
+                  <ul class="copyright_link">
+                     <li><a href="privacy.html">隱私權政策</a></li>
+                     <li><a href="terms.html">網站使用條款</a></li>
+                     <li><a href="sitemap.html">網站地圖</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div id="btn_top"><img src="images/arrow_up.png"></div>
+      <!--END FOOTER-->
   </body>
 </html>

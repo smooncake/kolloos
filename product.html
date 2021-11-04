@@ -36,22 +36,15 @@
       <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
       <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
       <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
-      <script>
-         $(function () {
-           $('.product_sidebar_list').tinyNav({
-             header: 'MENU 選單項目' // Writing any title with this option triggers the header
-           });
-           $('#main_navbar').bootnavbar();
-         });
-      </script>
    </head>
    <body>
       <!-- HEADER -->
       <header>
-         <div class="header_marquee">官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠<span><img src="images/icons/close.png" alt=""></span></div>
+         <div class="header_marquee">
+            <div>官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠官網首次入會可享50元優惠<span><img src="images/icons/close.png" alt=""></span></div></div>
          <!--NAV-->
          <nav>
-            <div class="search">
+            <div class="search d-none d-xl-block">
                <form class="search_form" action="">
                   <div class="vessel">
                      <label>搜尋</label>
@@ -67,37 +60,37 @@
                         <h1>Kollos</h1>
                      </a>
                   </div>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="news.html">
                         <h2>最新消息</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="product.html">
                         <h2>商品介紹</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="product.html">
                         <h2>商品介紹</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="blog.html">
                         <h2>文章介紹</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="blog.html">
                         <h2>文章介紹</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="javascript:;">
                         <h2>關於KOLLOS</h2>
                      </a>
                   </li>
-                  <li class="list">
+                  <li class="list d-none d-xl-block">
                      <a href="buy.html">
                         <h2>馬上購買</h2>
                      </a>
@@ -108,6 +101,8 @@
                   <li class="list"><a href="javascript:;"><img src="images/icons/logout.png" alt=""></a></li>
                   <li class="list"><a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icons/cart.png" alt=""></a></li>
                   <li class="list"><a href="store.html"><img src="images/icons/location.png" alt=""></a></li>
+                  <li class="list d-xl-none"><a href="#" class="dropbtn" data-toggle="modal" data-target="#searchM"><img src="images/icons/search02.png" alt=""></a></li>
+                  <li class="list d-xl-none"><a href="#" class="dropbtn" data-toggle="modal" data-target="#menu"><img src="images/icons/menu.png" alt=""></a></li>
                </ul>
             </div>
          </nav>
@@ -169,60 +164,71 @@
                </div>
             </div>
          </div>
-         <!-- MODAL-CONRENT -->
+         <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL 登入 -->
-      <!-- Modal search -->
-      <div class="modal fade" id="search_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-search" role="document">
-            <!--       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/XX.png" alt=""></span></button> -->
+      <!-- MODAL SEARCH -->
+      <div class="modal fade" id="searchM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
             <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+               </div>
                <div class="modal-body">
                   <form class="search_form" action="">
                      <div class="vessel">
-                        <label>找商品</label>
-                        <input type="text" name="" placeholder="找商品">
+                        <label>搜尋</label>
+                        <input type="text" name="" placeholder="搜尋">
                         <input type="submit" value="">
                      </div>
                   </form>
                </div>
             </div>
          </div>
+         <!-- MODAL DIALOG -->
       </div>
-      <!-- Modal menu -->
-      <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="addToCart">
-         <div class="modal-dialog" role="document">
+      <!-- END MODAL SEARCH -->
+      <!-- MODAL MENU -->
+      <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
             <div class="modal-content">
                <div class="modal-header">
-                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><b>分類</b></div>
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>選單</b></div>
                </div>
-               <div class="modal-body" style="overflow-y: auto;">
-                  <div class="product_sidebar_menu">
-                     <ul class="product_sidebar_list">
-                        <li>
-                           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">火鍋料底</a>
-                           <ul class="collapse" id="homeSubmenu">
-                              <li><a href="product.html">火鍋料</a></li>
-                              <li><a href="product.html">魚類</a></li>
-                              <li><a href="product.html">豬類</a></li>
-                           </ul>
-                        </li>
-                        <li>
-                           <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">湯底</a>
-                           <ul class="collapse" id="pageSubmenu">
-                              <li><a href="product.html">火鍋料</a></li>
-                              <li><a href="product.html">魚類</a></li>
-                              <li><a href="product.html">豬類</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </div>
+               <div class="modal-body">
+                  <ul class="category">
+                     <li class="title">最新消息</li>
+                     <li><a href="news.html">KOLLOS新鮮事</a></li>
+                     <li><a href="news.html">遠紅外線Dr.K</a></li>
+                     <li><a href="news.html">專題報導</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">舒活健康衣褲</li>
+                     <li><a href="product.html">全系列商品</a></li>
+                     <li><a href="product.html">KOLLOS洸動能男款</a></li>
+                     <li><a href="product.html">KOLLOS洸動能女款</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">保健護理</li>
+                     <li><a href="product.html">全系列商品</a></li>
+                     <li><a href="product.html">奈米洸動能倍舒眠眼罩</a></li>
+                     <li><a href="product.html">奈米洸動能能量貼布</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title">關於KOLLOS</li>
+                     <li><a href="javascript:;">公司緣起</a></li>
+                     <li><a href="javascript:;">科樂思的故事</a></li>
+                     <li><a href="javascript:;">核心科技</a></li>
+                  </ul>
+                  <ul class="category">
+                     <li class="title"><a href="buy.html">我要購買</a></li>
+                  </ul>
                </div>
             </div>
-            <!-- modal-content -->
          </div>
-         <!-- modal-dialog -->
+         <!-- MODAL DIALOG -->
       </div>
+      <!-- END MODAL MENU -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog modal-dialog-menber" role="document">
@@ -263,11 +269,11 @@
                </div>
             </div>
          </div>
-         <!-- MODAL-CONRENT -->
+         <!-- MODAL DIALOG -->
       </div>
       <!-- END 購物車(DIALOG) -->
       <!-- MODAL 購物車(RIGHT) -->
-      <div class="modal right fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart">
+      <div class="modal right fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -334,7 +340,7 @@
                   </div>
                </div>
             </div>
-            <!-- MODAL-CONRENT -->
+            <!-- MODAL DIALOG -->
          </div>
          <!-- END MODAL 購物車(RIGHT) -->
       </div>
@@ -342,11 +348,11 @@
       <div id="wrapper">
          <!-- PRODUCT -->
          <section id="product">
-            <div class="breadcrumbs">
-               <span>Home</span>&nbsp;&nbsp;>&nbsp;&nbsp;<span class="on">舒活健康衣褲</span>
-            </div>
             <div class="row content">
-               <div class="col-lg-2 col-md-12 col-12 bootstrap_default product_sidebar">
+               <div class="col-lg-12 col-md-12 col-12 bootstrap_default breadcrumbs">
+                  <span>Home</span>&nbsp;&nbsp;>&nbsp;&nbsp;<span class="on">舒活健康衣褲</span>
+               </div>
+               <div class="col-lg-2 col-md-12 col-12 bootstrap_default product_sidebar d-none d-xl-blocke d-lg-block">
                   <ul class="product_sidebar_filter">
                      <li class="title"><label>分類</label></li>
                      <li><label><input type="checkbox" name="" value="">KOLLOS洸動能男款</label></li>
@@ -651,25 +657,25 @@
                </li>
                <li class="col-lg-5 col-md-12 col-12 bootstrap_default footer_nav">
                   <ul class="row">
-                     <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
                         <span>KOLLOS健康圈</span>
                         <a href="blog.html">文章介紹</a>
                         <a href="blog.html">文章介紹</a>
                         <a href="blog.html">文章介紹</a>
                      </li>
-                     <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
                         <span>會員權益</span>
                         <a href="register.html">加入會員</a>
                         <a href="info.html">會員條款</a>
                         <a href="info.html">會員權益</a>
                      </li>
-                     <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
                         <span>選購須知</span>
                         <a href="info.html">訂購＆付款</a>
                         <a href="info.html">運送方式</a>
                         <a href="info.html">退換貨說明</a>
                      </li>
-                     <li class="col-lg-3 col-md-6 col-6 bootstrap_default footer_nav_list">
+                     <li class="col-lg-3 col-md-3 col-6 bootstrap_default footer_nav_list">
                         <span>客戶服務</span>
                         <a href="order_histoty.html">訂單查詢</a>
                         <a href="info.html">常見問題</a>
@@ -687,20 +693,18 @@
                </li>
             </ul>
             <div class="copyright">
-               Copyright © KOLLOS All Rights Reserved.
-               <ul class="copyright_link">
-                  <li><a href="privacy.html">隱私權政策</a></li>
-                  <li><a href="terms.html">網站使用條款</a></li>
-                  <li><a href="sitemap.html">網站地圖</a></li>
-               </ul>
+               <div>
+                  Copyright © KOLLOS All Rights Reserved.
+                  <ul class="copyright_link">
+                     <li><a href="privacy.html">隱私權政策</a></li>
+                     <li><a href="terms.html">網站使用條款</a></li>
+                     <li><a href="sitemap.html">網站地圖</a></li>
+                  </ul>
+               </div>
             </div>
          </div>
       </footer>
-      <!-- <div id="btn_top">
-         <div id="btn_top02"><img src="images/icon_003.png"></div>
-         <a href="contact.html"><img src="images/icon_002.png"></a>
-         <a href="#" class="dropbtn" data-toggle="modal" data-target="#addToCart"><img src="images/icon_001.png"></a>
-         </div> -->
+      <div id="btn_top"><img src="images/arrow_up.png"></div>
       <!--END FOOTER-->
       <script type="text/javascript">
          $(document).on('ready', function() {
@@ -710,7 +714,23 @@
                dots: true,
                arrows: false,
                autoplay: false,
-               autoplaySpeed: 5000
+               autoplaySpeed: 5000,
+                responsive: [
+                   {
+                     breakpoint: 769,
+                     settings: {
+                       arrows: false,
+                       slidesToShow: 2
+                     }
+                   },
+                   {
+                     breakpoint: 480,
+                     settings: {
+                       arrows: false,
+                       slidesToShow: 1
+                     }
+                   }
+                 ]
              });
               $('#recommend .prduct_recommend').slick({
                slidesToShow: 3,
@@ -718,7 +738,23 @@
                dots: true,
                arrows: false,
                autoplay: false,
-               autoplaySpeed: 5000
+               autoplaySpeed: 5000,
+                responsive: [
+                   {
+                     breakpoint: 769,
+                     settings: {
+                       arrows: false,
+                       slidesToShow: 2
+                     }
+                   },
+                   {
+                     breakpoint: 480,
+                     settings: {
+                       arrows: false,
+                       slidesToShow: 1
+                     }
+                   }
+                 ]
              });
          });
       </script>
