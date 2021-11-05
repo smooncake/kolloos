@@ -110,7 +110,7 @@
       </header>
       <!-- MODAL 登入 -->
       <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-menber" role="document">
+         <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
@@ -169,7 +169,7 @@
       <!-- END MODAL 登入 -->
       <!-- MODAL SEARCH -->
       <div class="modal fade" id="searchM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-menber" role="document">
+         <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
@@ -190,7 +190,7 @@
       <!-- END MODAL SEARCH -->
       <!-- MODAL MENU -->
       <div class="modal right fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-menber" role="document">
+         <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>選單</b></div>
@@ -229,9 +229,31 @@
          <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL MENU -->
+         <!-- MODAL INFO -->
+         <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-s" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+                  </div>
+                  <div class="modal-body">
+                     <ul class="text-center">
+                        <li class="modal-body_title red"><img src="images/alert.png" alt="">取消訂單</li>
+                        <li>訂單取消後商品庫存及原活動優惠無法保留，如需再次購買，建議您立即重新下單。</li>
+                        <li class="row btn_product">
+                           <span class="col-lg-6 col-md-6 col-6 bootstrap_default btn btn_secondary_outline"><a href="#" data-dismiss="modal" aria-label="Close">放棄取消</a></span>
+                           <span class="col-lg-6 col-md-6 col-6 bootstrap_default btn btn_primary"><a href="order_cancel.html">確認取消</a></span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- MODAL DIALOG -->
+         </div>
+         <!-- END MODAL INFO -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-menber" role="document">
+         <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
                   <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
@@ -357,7 +379,7 @@
                         <!-- 訂單明細 -->
                         <ul>
                           <li>
-                            <ul class="block_list_table02">
+                            <ul class="block_list_table02 title">
                               <li data-title="商品照片:">商品照片</li>
                               <li data-title="商品名稱:">商品名稱</li>
                               <li data-title="數量:">數量</li>
@@ -414,7 +436,7 @@
                                        <div class="cart_sidebar_content">-NT$0</div>
                                     </li>
                                     <li><hr></li>
-                                    <li class="cart_sidebar_list">
+                                    <li class="cart_sidebar_list cart_sidebar_list_total">
                                        <div class="cart_sidebar_title">共 4 件商品，總金額</div>
                                        <div class="cart_sidebar_content">NT$<span>5,450</span></div>
                                     </li>
@@ -508,9 +530,9 @@
                   <!-- END 發票資訊 -->
                   <!-- BTN -->
                   <div class="row">
-                     <ul class="col-lg-3 col-md-6 col-12 bootstrap_default m-auto">
-                        <li class="btn btn_primary"><a href="javascript:;">取消訂單</a></li>
-                        <li class="btn btn_primary"><a href="javascript:;">我要退貨</a></li>
+                     <ul class="col-lg-4 col-md-6 col-12 bootstrap_default m-auto">
+                        <li class="btn btn_primary"><a href="#" class="dropbtn" data-toggle="modal" data-target="#info">取消訂單</a></li>
+                        <li class="btn btn_primary"><a href="#" class="dropbtn" data-toggle="modal" data-target="#info">我要退貨</a></li>
                         <li class="btn btn_secondary_outline"><a href="order_histoty.html">回訂單列表</a></li>
                      </ul>
                   </div>

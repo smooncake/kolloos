@@ -229,6 +229,27 @@
          <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL MENU -->
+         <!-- MODAL INFO -->
+         <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-s" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+                  </div>
+                  <div class="modal-body">
+                     <ul class="text-center">
+                        <li class="modal-body_title red"><img src="images/alert.png" alt="">ATM 繳費帳號</li>
+                        <li>銀行代碼 222 帳號 9829 4112 6083 7199<br/>繳費截止時間 2021/05/09 23:59:59</li>
+                        <li class="row btn_product">
+                           <span class="col-lg-12 col-md-12 col-12 bootstrap_default btn btn_primary"><a href="#" data-dismiss="modal" aria-label="Close">確認</a></span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- MODAL DIALOG -->
+         </div>
+         <!-- END MODAL INFO -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog modal-dialog-menber" role="document">
@@ -383,7 +404,7 @@
                                     <div class="col-lg-4 col-md-12 col-12 bootstrap_default">有效期限<input type="text" name="" placeholder="MM/YY"></div>
                                     <div class="col-lg-4 col-md-12 col-12 bootstrap_default">背面末3碼<input type="text" name="" placeholder="CVC/CCV"></div>
                                  </li>
-                                 <li class="btn btn_primary"><a href="#">進行付款</a></li>
+                                 <li class="btn btn_primary"><a href="javascript:;">進行付款</a></li>
                                  <!-- ATM -->
                                  <li>
                                     <div class="block_list_title">ATM</div>
@@ -397,7 +418,7 @@
                                     </div>
                                     <div class="block_list_title red mt-2">注意事項<br/>持以上銀行發行之金融卡並選擇該銀行免跨行手續費；選擇其他銀行須支付跨行手續費15元。</div>
                                  </li>
-                                 <li class="btn btn_primary"><a href="#">進行付款</a></li>
+                                 <li class="btn btn_primary"><a href="#" class="dropbtn" data-toggle="modal" data-target="#info">進行付款</a></li>
                                  <!-- 超商條碼 -->
                                  <li class="block_list">
                                     <div class="block_list_title">超商條碼</div>
@@ -405,7 +426,7 @@
                                  </li>
                                  <li class="cart_done_title02 text-center">LLL21 291 258 677</li>
                                  <li class="text-center"><a href="javascript:;">XXXX.com.tw</a></li>
-                                 <li class="btn btn_primary"><a href="#">進行付款</a></li>
+                                 <li class="btn btn_primary"><a href="javascript:;">進行付款</a></li>
                               </ul>
                            </li>
                         </ul>

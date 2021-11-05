@@ -36,6 +36,13 @@
       <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
       <script type="text/javascript" src="bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js" charset="UTF-8"></script>
       <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
+      <script>
+         $(function () {
+           $('.menber_sidebar_mobile').tinyNav({
+             header: '更多選單請點此選擇' // Writing any title with this option triggers the header
+           });
+         });
+      </script>
    </head>
    <body>
       <!-- HEADER -->
@@ -350,7 +357,7 @@
       <section id="menber">
         <div class="row content">
           <div class="col-lg-2 col-md-12 col-12 bootstrap_default menber_sidebar">
-            <ul>
+            <ul class="menber_sidebar_mobile tinynav01">
               <li class="menber_sidebar_list"><a href="menber.html" class="on">會員資料設定</a></li>
               <li class="menber_sidebar_list"><a href="order_histoty.html">訂單查詢</a></li>
               <li class="menber_sidebar_list"><a href="money_histoty.html">購物金紀錄</a></li>

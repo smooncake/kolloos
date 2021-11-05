@@ -38,8 +38,8 @@
       <link href="bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.css" rel="stylesheet" type="text/css" />
       <script>
          $(function () {
-           $('.info_sidebar').tinyNav({
-             header: 'MENU 選單項目' // Writing any title with this option triggers the header
+           $('.info_sidebar_mobile').tinyNav({
+             header: '更多選單請點此選擇' // Writing any title with this option triggers the header
            });
          });
       </script>
@@ -171,7 +171,7 @@
                </div>
             </div>
          </div>
-         <!-- MODAL DIALOG -->>
+         <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL 登入 -->
       <!-- MODAL SEARCH -->
@@ -355,12 +355,12 @@
     <div id="wrapper">
       <!-- INFO -->
       <section id="info">
-        <div class="breadcrumbs">
-          <span>Home</span>&nbsp;&nbsp;>&nbsp;&nbsp;<span class="on">會員權益</span>
-        </div>
         <div class="row content">
+<!--            <div class="col-lg-12 col-md-12 col-12 bootstrap_default breadcrumbs">
+             <span>Home</span>&nbsp;&nbsp;>&nbsp;&nbsp;<span class="on">會員權益</span>
+           </div> -->
           <div class="col-lg-2 col-md-12 col-12 bootstrap_default info_sidebar">
-            <ul>
+            <ul class="info_sidebar_mobile tinynav02">
               <li class="info_sidebar_list"><a href="javascript:;">會員條款</a></li>
               <li class="info_sidebar_list"><a href="javascript:;" class="on">會員權益</a></li>
               <li class="info_sidebar_list"><a href="javascript:;">訂購＆付款</a></li>

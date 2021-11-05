@@ -229,6 +229,28 @@
          <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL MENU -->
+         <!-- MODAL INFO -->
+         <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-s" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button></div>
+                  </div>
+                  <div class="modal-body">
+                     <ul class="text-center">
+                        <li class="modal-body_title red"><img src="images/alert.png" alt="">溫馨提示</li>
+                        <li>訂單送出，將無法修改！<br/>如欲取修訂單請至「訂單查詢」做取消。</li>
+                        <li class="row btn_product">
+                           <span class="col-lg-6 col-md-6 col-6 bootstrap_default btn btn_secondary_outline"><a href="#" data-dismiss="modal" aria-label="Close">再次檢視訂單</a></span>
+                           <span class="col-lg-6 col-md-6 col-6 bootstrap_default btn btn_primary"><a href="cart03.html">確認送出</a></span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- MODAL DIALOG -->
+         </div>
+         <!-- END MODAL INFO -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog modal-dialog-menber" role="document">
@@ -572,7 +594,7 @@
                         <div class="cart_sidebar_title">應付金額</div>
                         <div class="cart_sidebar_content">NT$<span>5,450</span></div>
                      </li>
-                     <li class="btn btn_primary mt-4"><a href="cart03.html">送出訂單</a></li>
+                     <li class="btn btn_primary mt-4"><a href="#" class="dropbtn" data-toggle="modal" data-target="#info">送出訂單</a></li>
                      <li class="btn btn_secondary_outline mt-2"><a href="cart02.html">返回購物明細</a></li>
                   </div>
                </ul>

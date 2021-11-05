@@ -229,6 +229,55 @@
          <!-- MODAL DIALOG -->
       </div>
       <!-- END MODAL MENU -->
+      <!-- MODAL FILTER -->
+      <div class="modal right fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-menber" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="modal-title" id="addToCartTitle"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/icons/close.png" alt=""></span></button><b>篩選</b></div>
+               </div>
+               <div class="modal-body">
+                  <div class="product_sidebar">
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>分類</label></li>
+                        <li><label><input type="checkbox" name="" value="">KOLLOS洸動能男款</label></li>
+                        <li><label><input type="checkbox" name="" value="">KOLLOS洸動能女款</label></li>
+                        <li><label><input type="checkbox" name="" value="">KOLLOS洸動能限量款</label></li>
+                     </ul>
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>價格</label></li>
+                        <li><input type="text" name="" placeholder="最小值"> ── <input type="text" name="" placeholder="最小值"></li>
+                     </ul>
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>運動類型</label></li>
+                        <li><label><input type="checkbox" name="" value="">運動類型A</label></li>
+                        <li><label><input type="checkbox" name="" value="">運動類型B</label></li>
+                        <li><label><input type="checkbox" name="" value="">運動類型C</label></li>
+                     </ul>
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>功能選擇</label></li>
+                        <li><label><input type="checkbox" name="" value="">功能選擇A</label></li>
+                        <li><label><input type="checkbox" name="" value="">功能選擇B</label></li>
+                        <li><label><input type="checkbox" name="" value="">功能選擇C</label></li>
+                     </ul>
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>季節選擇</label></li>
+                        <li><label><input type="checkbox" name="" value="">春夏</label></li>
+                        <li><label><input type="checkbox" name="" value="">秋冬</label></li>
+                     </ul>
+                     <ul class="product_sidebar_filter">
+                        <li class="title"><label>顏色</label></li>
+                        <li><label><input type="checkbox" name="" value="">靜謐黑<span class="color" style="background:#121C3B"></span></label></li>
+                        <li><label><input type="checkbox" name="" value="">晨光藍<span class="color" style="background:#fff"></span></li>
+                        <li><label><input type="checkbox" name="" value="">薔薇紅<span class="color" style="background:#E64B3B"></span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- MODAL DIALOG -->
+      </div>
+      <!-- END MODAL FILTER -->
       <!-- MODAL 購物車(DIALOG) -->
       <div class="modal fade" id="addToCartDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog modal-dialog-menber" role="document">
@@ -368,6 +417,7 @@
                      <li><a data-toggle="tab" href="#news04">遠紅外線Dr.K</a></li>
                      <li><a data-toggle="tab" href="#news05">專題報導</a></li>
                   </ul>
+                  <a href="#" class="dropbtn" data-toggle="modal" data-target="#filter"><div class="filter d-xl-none">篩選商品<img src="images/icons/filter.png" alt=""></div></a>
                   <div class="tab-content">
                      <div id="news01" class="tab-pane fade active show">
                         <ul class="row">

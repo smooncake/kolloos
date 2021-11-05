@@ -1,6 +1,6 @@
 // BTN_TOP
 function btn_top(){
-    $("#btn_top").click(function() {
+    $("#btn_top02").click(function() {
         $("html,body").animate({scrollTop:0},1000);
     });
 }
@@ -38,7 +38,7 @@ function rating(){
     )
 }
 
-// 日曆功能
+// 星星功能
 function cal(){
     $("#birthday2_datepicker,#birthday_datepicker").datepicker(
         {
