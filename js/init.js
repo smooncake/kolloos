@@ -1,7 +1,15 @@
 // BTN_TOP
 function btn_top(){
-    $("#btn_top02").click(function() {
+    $("#btn_top").click(function() {
         $("html,body").animate({scrollTop:0},1000);
+    });
+    $(window).scroll(function(){
+        var SCROLL = $(window).scrollTop(); //抓目前網頁捲軸的座標
+        if( SCROLL>600 ){
+          $("#btn_top").stop(true,false).animate({ bottom : 50}, 500);
+        }else{
+          $("#btn_top").stop(true,false).animate({ bottom : -1000}, 500);
+        }
     });
 }
 
@@ -21,24 +29,8 @@ function number(){
     );
 }
 
-// 星星功能
-function rating(){
-    $('.menber_star span').hover(
-        function(){
-            $(this).find('img').attr("src", "images/star.png");
-                var $preAll_start_obj = $($(this)).prevAll();
-                var $nextAll_start_obj = $($(this)).nextAll();
-                $preAll_start_obj.each(function( i, obj ) {
-                    $($(obj).find('img')).attr("src", "images/star.png");
-                });
-                $nextAll_start_obj.each(function( i, obj ) {
-                    $($(obj).find('img')).attr("src", "images/star05.png");
-            });
-        }
-    )
-}
 
-// 星星功能
+// 日曆功能
 function cal(){
     $("#birthday2_datepicker,#birthday_datepicker").datepicker(
         {
@@ -53,6 +45,5 @@ function cal(){
 $(document).ready(function(){
 	  btn_top();
       number();
-      rating();
       cal();
 });
