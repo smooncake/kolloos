@@ -623,6 +623,12 @@ li[data-title="小計:"] span { font-weight: bold; }
 .product_list .product_list_category02 h4 { display: inline-block; background: #121C3B; color: #fff; font-size: 14px; line-height: 20px; padding: 4px 8px; }
 .product_list .price_date { font-size: 14px; line-height: 20px; color: #999999; }
 
+.product_menu { margin-bottom: 24px; }
+.product_menu li { display: inline-block; margin-right: 8px; }
+.product_menu li a { display: block; border: #121C3B 1px solid; color: #121C3B; font-size: 18px; line-height: 24px; padding: 8px 16px; }
+.product_menu li a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #121C3B; color: #fff; }
+.product_menu li a.active { background: #121C3B; color: #fff; }
+
 /* DETAIL */
 .product_color { margin-top: 24px; }
 .product_color div { display: inline-block; width: 44px; height: 44px; background: #fff; padding: 6px; margin-right: 12px; border: 1px #E7E7E7 solid; cursor: pointer; border-radius: 999px; -moz-border-radius: 999px; -webkit-border-radius: 999px; }
