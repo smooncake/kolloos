@@ -418,6 +418,8 @@ section.content .content_title { padding: 100px 0px 50px 0px; text-align: center
 .block .block_list .block_list_address .block_list_address_detail { width: 100%; display: flex; justify-content: flex-start; }
 .block .block_list .block_list_address .block_list_address_detail select { width: 100px; margin-right: 8px; }
 .block .block_list .block_list_address .block_list_address_detail .input { flex-grow: 1; }
+.block .block_list .block_list_address .block_list_address_detail .btn_primary { margin-top: 0px; }
+.block .block_list .block_list_address .block_list_address_detail .btn_primary a { padding: 9px 16px; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
 .block .block_list .btn_primary_outline { display: inline-block; text-align: left; }
 .block .block_list .btn_primary_outline a { width: auto; padding: 12px 16px 12px 40px; }
 .block .block_list .btn_primary_outline a:before { content: ''; background-image: url(../images/icons/plus.png); width: 15px; height: 15px; position: absolute; left: 16px; top: 16px; }
@@ -553,8 +555,8 @@ li[data-title="小計:"] span { font-weight: bold; }
 #news .news_left .news_left_menu > li > a { transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; font-size: 18px; line-height: 24px; font-weight: bold; padding: 20px 0px; }
 #news .news_left .news_left_menu > li > a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color: #121C3B; }
 #news .news_left .news_left_menu > li a[aria-expanded="true"]::after { content: url(../images/arrow_up.png); }
-#news .news_left .news_left_menu .collapse li { padding-left: 16px; position: relative; margin-bottom: 12px; }
-#news .news_left .news_left_menu .collapse li span { position: absolute; left: 0px; top: -2px; }
+#news .news_left .news_left_menu li { padding-left: 16px; position: relative; margin-bottom: 12px; }
+#news .news_left .news_left_menu li span { position: absolute; left: 0px; top: -2px; }
 #news .news_left .news_left_menu .dropdown-toggle::after { position: absolute; right: 0px; top: 20px; border: none; content: url(../images/arrow_down.png); }
 #news .news_right { /* product blog */ /* blog detail */ }
 #news .news_right .product_list_category02 h4 { display: inline-block; background: #121C3B; color: #fff; font-size: 14px; line-height: 20px; padding: 4px 8px; }
