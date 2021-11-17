@@ -411,6 +411,7 @@ section.content .content_title { padding: 100px 0px 50px 0px; text-align: center
 .block .block_list { display: flex; justify-content: flex-start; margin-bottom: 20px; }
 .block .block_list:last-child { margin-bottom: 0px; }
 .block .block_list .block_list_title { flex: 0 0 80px; }
+.block .block_list .block_list_title02 { flex: 0 0 140px; }
 .block .block_list .block_list_content { flex-grow: 1; padding: 0px 20px; }
 .block .block_list .block_list_content > li { margin-bottom: 12px; }
 .block .block_list .block_list_note { flex: 0 0 200px; }
@@ -505,7 +506,7 @@ li[data-title="移除:"] img { width: 14px; }
 /* 訂單查詢 */
 li[data-title="訂購時間:"] { flex: 1; }
 
-li[data-title="訂單編號:"] { flex: 1; }
+li[data-title="訂單編號:"] { width: 220px; }
 li[data-title="訂單編號:"] img { margin-right: 8px; vertical-align: middle; }
 
 li[data-title="付款方式:"] { flex: 1; }
