@@ -638,19 +638,20 @@ li[data-title="小計:"] span { font-weight: bold; }
 .product_color div span { display: inline-block; width: 30px; height: 30px; border: 1px #E7E7E7 solid; border-radius: 999px; -moz-border-radius: 999px; -webkit-border-radius: 999px; }
 .product_color div:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #E7E7E7; }
 .product_color div.active { border: 1px #E7E7E7 solid; background: #E7E7E7; }
-.product_color div.disable { border: 1px #E7E7E7 solid; background: #999999; }
+.product_color div.disable { border: 1px #E7E7E7 solid; background: #999999; cursor: not-allowed; }
 
 .product_size { margin-top: 24px; }
 .product_size span { display: inline-block; width: 44px; height: 44px; background: #fff; line-height: 44px; text-align: center; border: 1px #121C3B solid; margin-right: 12px; cursor: pointer; }
 .product_size span:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #121C3B; color: #fff; }
 .product_size span.active { background: #121C3B; color: #fff; }
-.product_size span.disable { background: #999999; border: 1px #999999 solid; color: #fff; }
+.product_size span.disable { background: #999999; border: 1px #999999 solid; color: #fff; cursor: not-allowed; }
 
 .product_numbers { max-width: 200px; height: 44px; text-align: center; display: flex; align-items: center; margin-top: 24px; }
 .product_numbers .inc { width: 44px; height: 100%; line-height: 44px; cursor: pointer; border: 1px solid #E7E7E7; }
 .product_numbers .inc:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color: #121C3B; }
 .product_numbers .dec { width: 44px; height: 100%; line-height: 44px; cursor: pointer; border: 1px solid #E7E7E7; }
 .product_numbers .dec:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color: #121C3B; }
+.product_numbers .red { font-size: 20px; font-weight: bold; }
 .product_numbers input[type="text"] { width: calc(100% - 88px); height: 100%; border: 1px solid #E7E7E7; text-align: center; border-radius: 0px; }
 
 /* EXTEA */
@@ -901,6 +902,9 @@ li[data-title="小計:"] span { font-weight: bold; }
 .btn_primary_outline a:hover { background: #E64B3B; border: 1px #EB786D solid; color: #fff; }
 .btn_primary_outline a:before { content: ''; background-image: url(../images/icons/cart02.png); width: 15px; height: 15px; position: absolute; left: calc(50% - 60px); top: 15px; }
 .btn_primary_outline a:hover:before { background-image: url(../images/icons/cart03.png); }
+
+.btn_gary_outline { text-align: center; }
+.btn_gary_outline a { border: 1px #999999 solid; color: #999999; position: relative; cursor: not-allowed; }
 
 .btn_secondary { text-align: center; }
 .btn_secondary a { background: #121C3B; color: #fff; }
