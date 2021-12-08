@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.icons-sprite, .icons-cal, .icons-cart, .icons-cart02, .icons-cart03, .icons-close, .icons-delete, .icons-delete02, .icons-fb, .icons-filter, .icons-home, .icons-homepage, .icons-ig, .icons-line, .icons-location, .icons-logout, .icons-menu, .icons-next, .icons-person, .icons-phone, .icons-plus, .icons-previous, .icons-qusetion, .icons-search, .icons-search02, .icons-share, .icons-youtube, .icons-zoom { background-image: url('../images/icons-sc7cfa16865.png'); background-repeat: no-repeat; }
+.icons-sprite, .icons-cal, .icons-cart, .icons-cart02, .icons-cart03, .icons-close, .icons-delete, .icons-delete02, .icons-fb, .icons-filter, .icons-home, .icons-homepage, .icons-ig, .icons-line, .icons-link, .icons-location, .icons-logout, .icons-menu, .icons-next, .icons-person, .icons-phone, .icons-plus, .icons-previous, .icons-qusetion, .icons-search, .icons-search02, .icons-share, .icons-youtube, .icons-zoom { background-image: url('../images/icons-sc0de02bc8c.png'); background-repeat: no-repeat; }
 
 .icons-cal { background-position: 0 0; }
 
@@ -27,33 +27,35 @@
 
 .icons-line { background-position: 0 -471px; }
 
-.icons-location { background-position: 0 -521px; }
+.icons-link { background-position: 0 -521px; }
 
-.icons-logout { background-position: 0 -557px; }
+.icons-location { background-position: 0 -571px; }
 
-.icons-menu { background-position: 0 -593px; }
+.icons-logout { background-position: 0 -607px; }
 
-.icons-next { background-position: 0 -629px; }
+.icons-menu { background-position: 0 -643px; }
 
-.icons-person { background-position: 0 -665px; }
+.icons-next { background-position: 0 -679px; }
 
-.icons-phone { background-position: 0 -701px; }
+.icons-person { background-position: 0 -715px; }
 
-.icons-plus { background-position: 0 -737px; }
+.icons-phone { background-position: 0 -751px; }
 
-.icons-previous { background-position: 0 -773px; }
+.icons-plus { background-position: 0 -787px; }
 
-.icons-qusetion { background-position: 0 -809px; }
+.icons-previous { background-position: 0 -823px; }
 
-.icons-search { background-position: 0 -845px; }
+.icons-qusetion { background-position: 0 -859px; }
 
-.icons-search02 { background-position: 0 -889px; }
+.icons-search { background-position: 0 -895px; }
 
-.icons-share { background-position: 0 -925px; }
+.icons-search02 { background-position: 0 -939px; }
 
-.icons-youtube { background-position: 0 -969px; }
+.icons-share { background-position: 0 -975px; }
 
-.icons-zoom { background-position: 0 -1011px; }
+.icons-youtube { background-position: 0 -1019px; }
+
+.icons-zoom { background-position: 0 -1061px; }
 
 .unreset address, .unreset blockquote, .unreset dd, .unreset div, .unreset dl, .unreset dt, .unreset fieldset, .unreset form, .unreset frame, .unreset frameset, .unreset h1, .unreset h2, .unreset h3, .unreset h4, .unreset h5, .unreset h6, .unreset noframes, .unreset ol, .unreset p, .unreset ul, .unreset center, .unreset dir, .unreset hr, .unreset menu, .unreset pre { display: block; }
 
@@ -195,7 +197,7 @@ input, button, textarea, select { font-size: 100%; }
 /* other */
 code, kbd, samp, tt { font-size: 100%; }
 
-header nav #logo a, header nav .menu .list > a, header nav .shortcut .list > a, header .nav_mege .nav_mege_menu ul li a, #news .news_left .news_left_menu > li > a, #product .product_decs > li a, #product .nav-tabs li a, #menber .menber_sidebar .menber_sidebar_list a, #info .info_sidebar .info_sidebar_list a, #sitemap .sitemap_list .sitemap_list_content a, .modal-dialog .modal-body .modal-body_link span a, .btn a { width: 100%; height: 100%; display: block; color: inherit; }
+header nav #logo a, header nav .menu .list > a, header nav .shortcut .list > a, header .nav_mege .nav_mege_menu ul li a, #news .news_left .news_left_menu > li > a, #news .news_share .news_share_link li a, #product .product_decs > li a, #product .nav-tabs li a, #menber .menber_sidebar .menber_sidebar_list a, #info .info_sidebar .info_sidebar_list a, #sitemap .sitemap_list .sitemap_list_content a, .modal-dialog .modal-body .modal-body_link span a, .btn a { width: 100%; height: 100%; display: block; color: inherit; }
 
 header nav #logo a, .pagenum .btnleft a, .pagenum .btnright a { white-space: nowrap; text-indent: 100%; overflow: hidden; }
 
@@ -566,6 +568,12 @@ li[data-title="小計:"] span { font-weight: bold; }
 #news .news_right .price_date { display: block; font-size: 14px; line-height: 20px; color: #999999; padding-top: 8px; }
 #news .news_right .news_right_list { padding: 20px 0px; }
 #news .news_right .news_right_img img { width: 100%; }
+#news .news_share { position: relative; }
+#news .news_share .news_share_link { width: 164px; background: #121C3B; display: none; position: absolute; z-index: 999; left: 0px; top: 20px; }
+#news .news_share .news_share_link li img { width: 20px; margin-right: 8px; }
+#news .news_share .news_share_link li a { transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; padding: 12px 20px; color: #fff; }
+#news .news_share .news_share_link li a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #302B56; }
+#news .news_share:hover .news_share_link { display: block; }
 
 /* PRODUCT */
 #product { max-width: 1440px; margin: 0px auto; /* DETAIL */ /* 	.services-slider {display:flex; max-width:600px;}
