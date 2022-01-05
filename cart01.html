@@ -120,9 +120,9 @@
                      <li class="modal-body_logo"><img src="images/logo.svg"></li>
                      <li class="modal-body_title">如欲使用K樂使專屬福利或功能，請先登入</li>
                      <div class="row modal-body_decs m-0 mt-3">
-                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_fb.png" alt=""></li>
-                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_google.png" alt=""></li>
-                        <li class="col-lg-4 col-md-12 col-12 bootstrap_default"><img src="images/btn_line.png" alt=""></li>
+                        <li class="col-lg-4 col-md-12 col-12 social_btn_fb bootstrap_default"><img src="images/btn_fb.png" alt=""></li>
+                        <li class="col-lg-4 col-md-12 col-12 social_btn_google bootstrap_default"><img src="images/btn_google.png" alt=""></li>
+                        <li class="col-lg-4 col-md-12 col-12 social_btn_line bootstrap_default"><img src="images/btn_line.png" alt=""></li>
                      </div>
                   </ul>
                   <ul class="modal-signin_block">
@@ -361,10 +361,13 @@
                   <p>完成訂購</p>
                </li>
             </ul>
-            <div class="message message_green text-left">
+            <div class="message text-left">
                官網首次入會可享50元優惠
                <span class="btn btn_secondary_small"><a href="register.html">加入會員</a></span>
             </div>
+            <div class="message message_green text-left">成功資訊</div>
+            <div class="message message_red text-left">失敗資訊</div>
+            <div class="message message_yellow text-left">警示資訊</div>
             <div class="row content">
                <div class="col-lg-9 col-md-12 col-12 bootstrap_default cart_content">
                   <ul class="row cart_block">
@@ -431,11 +434,11 @@
                   </ul>
                   <ul class="cart_content_discount">
                      <li class="cart_discount_title">折扣碼</li>
-                     <li class="cart_discount_input"><input type="text" name="" placeholder="請輸入折扣碼"><span class="btn btn_secondary_small"><a href="#">確認</a></span></li>
+                     <li class="cart_discount_input"><input type="number" name="" placeholder="請輸入折扣碼"><span class="btn btn_secondary_small"><a href="#">確認</a></span></li>
                   </ul>
                   <ul class="cart_content_discount cart_content_discount02">
-                     <li class="cart_discount_title">購物金 (現有100元)</li>
-                     <li class="cart_discount_input">使用購物金<input type="text" name="" placeholder="請輸入折扣碼">元<span class="btn btn_secondary_small"><a href="#">全部使用</a></span></li>
+                     <li class="cart_discount_title">購物金 <span>(現有100元)</span></li>
+                     <li class="cart_discount_input">使用購物金<input type="number" name="" placeholder="0">元<span class="btn btn_secondary_small"><a href="#">全部使用</a></span></li>
                   </ul>
                </div>
                <ul class="col-lg-3 col-md-12 col-12 bootstrap_default cart_sidebar">
