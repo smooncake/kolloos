@@ -271,7 +271,7 @@ header nav #logo a, .pagenum .btnleft a, .pagenum .btnright a { white-space: now
 
 body { font: normal 16px/24px Verdana, "微軟正黑體", sans-serif !important; color: #333; background: #fff !important; }
 
-#wrapper { position: relative; }
+#wrapper { position: relative; padding-top: 180px; }
 
 .clear { clear: both; }
 
@@ -298,11 +298,11 @@ body.modal-open { overflow: hidden; }
 
 .float-right { float: right; }
 
-header { border-bottom: 1px #E7E7E7 solid; margin-bottom: 40px; }
+header { border-bottom: 1px #E7E7E7 solid; margin-bottom: 40px; width: 100%; background: #fff; position: fixed; top: 0px; z-index: 99; }
 header .header_marquee { background: #FAFAFA; }
 header .header_marquee div { max-width: 1440px; margin: 0px auto; padding: 20px 48px 20px 16px; position: relative; }
 header .header_marquee span { position: absolute; top: 20px; right: 16px; }
-header nav { max-width: 1440px; margin: 0px auto; padding: 16px 24px; position: relative; }
+header nav { max-width: 1440px; margin: 0px auto; padding: 16px 24px; background: #fff; position: relative; }
 header nav .nav { display: flex; align-items: center; justify-content: space-between; }
 header nav #logo { background: url(../images/logo.svg) no-repeat center; width: 165px; height: 40px; background-size: 165px; margin-right: 16px; /*  flex-basis:165px; */ }
 header nav .menu { display: flex; align-items: center; }
