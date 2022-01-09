@@ -6,7 +6,7 @@ function btn_top(){
     $(window).scroll(function(){
         var SCROLL = $(window).scrollTop(); //抓目前網頁捲軸的座標
         if( SCROLL>600 ){
-          $("#btn_top").stop(true,false).animate({ bottom : 50}, 500);
+          $("#btn_top").stop(true,false).animate({ bottom : 10}, 500);
         }else{
           $("#btn_top").stop(true,false).animate({ bottom : -1000}, 500);
         }
