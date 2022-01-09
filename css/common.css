@@ -361,7 +361,7 @@ footer .copyright .copyright_link a:hover { transition: 0.5s; -webkit-transition
 #banner { margin-top: -40px; }
 #banner .banner img { width: 100%; }
 
-#index { max-width: 1440px; margin: 0px auto; /* ONE */ /* TWO */ }
+#index { max-width: 1440px; margin: 0px auto; /* ONE */ /* TWO */ /* NEWS */ }
 #index .index_block_one { margin-top: 24px; }
 #index .index_block_one .index_block_one_content { position: relative; }
 #index .index_block_one .index_block_one_content img { width: 100%; margin-bottom: -6px; }
@@ -388,6 +388,9 @@ footer .copyright .copyright_link a:hover { transition: 0.5s; -webkit-transition
 #index .index_block_two .index_block_two_text .btn_secondary_outline a { width: 160px; }
 #index .index_block_two .index_block_two_img { padding: 0px; }
 #index .index_block_two .index_block_two_img img { width: 100%; margin-bottom: -6px; }
+#index .index_news .product_list_category02 h4 { display: inline-block; background: #121C3B; color: #fff; font-size: 14px; line-height: 20px; padding: 4px 8px; }
+#index .index_news .product_list_title h3 { min-height: 48px; font-size: 18px; line-height: 24px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+#index .index_news .price_date { font-size: 14px; line-height: 20px; color: #999999; }
 
 .breadcrumbs { margin-bottom: 32px; }
 .breadcrumbs span { display: inline-block; }
