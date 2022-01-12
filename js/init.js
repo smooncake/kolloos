@@ -42,8 +42,14 @@ function cal(){
     );
 }
 
+// tooltip
+function tooltip(){
+   $("[data-toggle='tooltip']").tooltip();
+}
+
 $(document).ready(function(){
 	  btn_top();
       number();
       cal();
+      tooltip();
 });
