@@ -269,7 +269,7 @@ header nav #logo a, .pagenum .btnleft a, .pagenum .btnright a { white-space: now
 .slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "slick"; font-size: 6px; line-height: 20px; text-align: center; color: black; opacity: 0.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
 
-body { font: normal 16px/24px Verdana, "微軟正黑體", sans-serif !important; color: #333; background: #fff !important; }
+body { font: normal 16px/24px Verdana, "微軟正黑體", sans-serif; color: #333; background: #fff !important; }
 
 #wrapper { position: relative; padding-top: 180px; }
 
@@ -580,6 +580,7 @@ li[data-title="小計:"] span { font-weight: bold; }
 #news .news_right .product_list_category02 img { vertical-align: top; }
 #news .news_right .product_list_title h3 { font-size: 30px; line-height: 40px; font-weight: bold; padding-top: 8px; }
 #news .news_right .price_date { display: block; font-size: 14px; line-height: 20px; color: #999999; padding-top: 8px; }
+#news .news_right .news_blog_block { padding: 20px; }
 #news .news_right .news_right_list { padding: 20px 0px; }
 #news .news_right .news_right_img img { width: 100%; }
 #news .news_share { position: relative; }
