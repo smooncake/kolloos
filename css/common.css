@@ -306,7 +306,7 @@ header nav { max-width: 1440px; margin: 0px auto; padding: 16px 24px; background
 header nav .nav { display: flex; align-items: center; justify-content: space-between; }
 header nav #logo { background: url(../images/logo.svg) no-repeat center; width: 165px; height: 40px; background-size: 165px; margin-right: 16px; /*  flex-basis:165px; */ }
 header nav .menu { display: flex; align-items: center; }
-header nav .menu .list > a { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; border-right: 1px #E7E7E7 solid; padding: 0px 16px 0px 16px; }
+header nav .menu .list > a { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; border-right: 1px #E7E7E7 solid; padding: 0px 16px 0px 16px; font-weight: 700; }
 header nav .menu .list > a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color: #444; }
 header nav .menu .list:last-child a { border-right: none; }
 header nav .shortcut { display: flex; align-items: center; justify-content: flex-end; }
@@ -318,7 +318,7 @@ header .nav_mege { width: 100%; background: #fff; padding: 24px; position: absol
 header .nav_mege > ul { display: flex; align-items: top; }
 header .nav_mege .nav_mege_img img { width: 100%; }
 header .nav_mege .nav_mege_menu { margin-bottom: 24px; }
-header .nav_mege .nav_mege_menu h3 { font-size: 18px; line-height: 24px; font-weight: bold; margin-bottom: 8px; }
+header .nav_mege .nav_mege_menu div { font-size: 18px; line-height: 24px; font-weight: bold; margin-bottom: 8px; }
 header .nav_mege .nav_mege_menu ul li a { padding: 4px 0px; }
 header .nav_mege .nav_mege_menu ul li a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; color: #E64B3B; }
 
@@ -619,7 +619,7 @@ li[data-title="小計:"] span { font-weight: bold; }
 #news .news_right { /* product blog */ /* blog detail */ }
 #news .news_right .product_list_category02 h4 { display: inline-block; background: #121C3B; color: #fff; font-size: 14px; line-height: 20px; padding: 4px 8px; }
 #news .news_right .product_list_category02 img { vertical-align: top; }
-#news .news_right .product_list_title h3 { font-size: 30px; line-height: 40px; font-weight: bold; padding-top: 8px; }
+#news .news_right .product_list_title h1 { font-size: 30px; line-height: 40px; font-weight: bold; padding-top: 8px; }
 #news .news_right .price_date { display: block; font-size: 14px; line-height: 20px; color: #999999; padding-top: 8px; }
 #news .news_right .news_blog_block { padding: 20px; }
 #news .news_right .news_right_list { padding: 20px 0px; }
@@ -642,7 +642,7 @@ li[data-title="小計:"] span { font-weight: bold; }
 #product .filter img { position: absolute; top: 10px; right: 16px; }
 #product .product_right { padding-left: 24px; }
 #product .product_category { font-size: 16px; line-height: 24px; margin-bottom: 8px; }
-#product .product_title h3 { font-size: 30px; line-height: 40px; font-weight: bold; margin-bottom: 8px; }
+#product .product_title h1 { font-size: 30px; line-height: 40px; font-weight: bold; margin-bottom: 8px; }
 #product .product_share { display: flex; align-items: center; margin-top: 24px; }
 #product .product_share span { margin-left: 8px; }
 #product .product_share span img { width: 50px; }
@@ -691,11 +691,13 @@ li[data-title="小計:"] span { font-weight: bold; }
 .product_list .product_list_category02 h4 { display: inline-block; background: #121C3B; color: #fff; font-size: 14px; line-height: 20px; padding: 4px 8px; }
 .product_list .price_date { font-size: 14px; line-height: 20px; color: #999999; }
 
-.product_menu { margin-bottom: 24px; }
-.product_menu li { display: inline-block; margin-right: 8px; margin-bottom: 12px; }
+.product_menu { margin-bottom: 12px; }
+.product_menu li { display: inline-block; margin-right: 8px; }
 .product_menu li a { display: block; border: #121C3B 1px solid; color: #121C3B; font-size: 18px; line-height: 24px; padding: 8px 16px; }
 .product_menu li a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #121C3B; color: #fff; }
 .product_menu li a.active { background: #121C3B; color: #fff; }
+
+.product_categorytag { margin-bottom: 24px; }
 
 /* DETAIL */
 .product_color { margin-top: 24px; }
@@ -1014,7 +1016,7 @@ li[data-title="小計:"] span { font-weight: bold; }
 } */
 .btn_small { text-align: center; }
 .btn_small a { color: #121C3B; border: 1px #E7E7E7 solid; padding: 8px 12px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
-.btn_small a img { width: 20px; height: 20px; padding: 2px; vertical-align: top; }
+.btn_small a img { width: 20px; height: 20px; padding: 2px; vertical-align: sub; }
 .btn_small a:hover { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; background: #E7E7E7; }
 
 .red { color: #E64B3B !important; }
