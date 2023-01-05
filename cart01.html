@@ -549,7 +549,7 @@
                      </li>
                   </ul>
                </div>
-               <ul class="col-lg-3 col-md-12 col-12 bootstrap_default cart_sidebar">
+               <ul class="col-lg-3 col-md-12 col-12 bootstrap_default cart_sidebar d-none d-lg-block">
                   <div class="cart_sidebar_block">
                      <li class="cart_sidebar_list">
                         <div class="cart_sidebar_title">共5件商品</div>
@@ -748,10 +748,13 @@
                              <div class="discount_list_content">
                                  <div class="cart_discount_input">
                                     <input type="radio" id="" name="" value="">
-                                    <label for="">使用購物金折抵：可用購物金共 100 元，此次使用</label>
-                                    <input type="text" name="" placeholder="0">
-                                    <label for="">元</label>
-                                    <span class="btn btn_secondary_small"><a href="#">全部使用</a></span>
+                                    使用購物金折抵：<br/ class="d-block d-sm-none">
+                                    <div>
+                                       可用購物金共 100 元，此次使用
+                                       <input type="text" name="" placeholder="0" class=small>
+                                       <label for="">元</label>
+                                       <span class="btn btn_secondary_small"><a href="#">全部使用</a></span>
+                                    </div>
                                  </div>
                              </div>
                            </li>
@@ -1035,6 +1038,41 @@
                     </li>
                   </ul>
                   <!-- END 折扣碼 -->
+
+               <!-- 結帳 -->
+               <ul class="cart_sidebar d-lg-none">
+                  <div class="cart_sidebar_block">
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">共5件商品</div>
+                        <div class="cart_sidebar_content">NT$ 5,450</div>
+                     </li>
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">折扣碼折抵</div>
+                        <div class="cart_sidebar_content">-NT$<span>200</span></div>
+                     </li>
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">購物金折抵</div>
+                        <div class="cart_sidebar_content">-NT$<span>0</span></div>
+                     </li>
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">折價券折抵</div>
+                        <div class="cart_sidebar_content">-NT$<span>0</span></div>
+                     </li>
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">運費</div>
+                        <div class="cart_sidebar_content">-NT$<span>-</span></div>
+                     </li>
+                     <li><hr></li>
+                     <li class="cart_sidebar_list">
+                        <div class="cart_sidebar_title">應付金額</div>
+                        <div class="cart_sidebar_content">NT$<span>5,450</span></div>
+                     </li>
+                     <li class="btn btn_primary mt-4"><a href="cart02.html">立即結帳</a></li>
+                     <li class="btn btn_secondary_outline mt-2"><a href="product.html">繼續購物</a></li>
+                  </div>
+               </ul>
+               <!-- END 結帳 -->
+
                </div>
          </div>
          </section>

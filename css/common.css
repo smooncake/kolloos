@@ -829,8 +829,10 @@ li[data-title="小計:"] span { font-weight: bold; }
 #cart .cart_content .cart_content_discount { /* background:$color-thirdly-light02; padding:$padding_6 $padding_6; margin-bottom:$padding_5; */ /* &:first-child{margin-top:$padding_5;} */ }
 #cart .cart_content .cart_content_discount .cart_discount_title { font-size: 18px; line-height: 24px; font-weight: bold; margin-bottom: 8px; }
 #cart .cart_content .cart_content_discount .cart_discount_title span { font-size: 16px; font-weight: bold; }
+#cart .cart_content .cart_content_discount .cart_discount_input > div { padding: 8px 0px 0px 30px; }
 #cart .cart_content .cart_content_discount .cart_discount_input input[type="number"] { width: 200px; }
 #cart .cart_content .cart_content_discount .cart_discount_input input[type="text"] { width: 160px; }
+#cart .cart_content .cart_content_discount .cart_discount_input input[type="text"].small { width: 100px; }
 #cart .cart_content .cart_content_discount .cart_discount_coupon { background: url(../images/coupon_l.png) left top repeat-y, url(../images/coupon_r.png) right top repeat-y; padding: 6px 8px; border-top: 1px #20C45A solid; border-bottom: 1px #20C45A solid; }
 #cart .cart_content .cart_content_discount .discount_list { display: flex; justify-content: flex-start; margin-bottom: 12px; /* 				.block_list_address{flex-grow:1; padding:0px 0px;
 					.block_list_address_detail{width:100%; display:flex; justify-content:flex-start;
@@ -1228,6 +1230,8 @@ li[data-title="小計:"] span { font-weight: bold; }
 			}
 		} */ }
   #cart .cart_content .cart_block.add { background: #FAFAFA; padding-left: 0px; }
+  #cart .cart_content .cart_content_discount .cart_discount_input > div { padding: 8px 0px 0px 0px; }
+  #cart .cart_content .cart_content_discount .cart_discount_input .btn_secondary_small { margin: 8px 0px 0px 0px; display: block; text-align: left; }
   /* BLOCK */
   .block_list_table02.add { background: #FAFAFA; padding-left: 0px; }
   .social_btn_fb { background: #3C5A9A; border-radius: 999px; margin-bottom: 8px; }
